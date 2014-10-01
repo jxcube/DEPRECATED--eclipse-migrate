@@ -13,5 +13,6 @@
     <string name="username_hint">Username</string>
     <string name="password_repeat_hint">Repeat password</string>
     <string name="submit">Submit</string>
+    <string name="title_activity_reg_success">RegSuccessActivity</string>
 
 </resources>

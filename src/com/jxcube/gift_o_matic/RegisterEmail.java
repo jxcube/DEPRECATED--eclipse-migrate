@@ -6,6 +6,7 @@ import java.util.Map;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -83,7 +84,7 @@ public class RegisterEmail extends Activity {
 			}
 			
 			RequestQueue queue = Volley.newRequestQueue(this);
-			String url = "http://192.168.1.129:3000/api/user";
+			String url = "http://api.giftomaticapp.com/user";
 			JSONObject userData = new JSONObject(formData);
 			JsonObjectRequest request = new JsonObjectRequest
 					(Request.Method.POST, url, userData, new Response.Listener<JSONObject>() {
@@ -96,8 +97,9 @@ public class RegisterEmail extends Activity {
 					}, new Response.ErrorListener() {
 						@Override
 						public void onErrorResponse(VolleyError error) {
-							Button b = (Button) v;
-							b.setText(error.getMessage());
+							Intent i = new Intent(RegisterEmail.getContext(), RegSuccessActivity.class);
+							i.putExtra("message", "An error has been occured");
+							startActivity(i);
 						}
 					});
 			queue.add(request);
