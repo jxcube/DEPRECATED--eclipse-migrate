@@ -24,8 +24,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RegisterEmail"
-            android:label="@string/title_activity_register_email"
+            android:name=".activity_signup"
+            android:label="Register Email"
             android:parentActivityName=".MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
