@@ -7,32 +7,28 @@
     android:clickable="false"
     android:background="#ffc50e0e">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <FrameLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="202dp"
             android:layout_height="202dp"
-            android:id="@+id/imageView"
-            android:background="@drawable/logo"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="130dp" />
+            android:background="@drawable/logo" />
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Loading..."
-            android:id="@+id/textView"
-            android:layout_gravity="center_horizontal|bottom"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="220dp"
             android:singleLine="false"
-            android:typeface="monospace"
-            android:layout_marginBottom="130dp" />
-    </LinearLayout>
+            android:text="Loading..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="monospace" />
+    </FrameLayout>
 
 </RelativeLayout>
