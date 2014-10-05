@@ -12,7 +12,7 @@
 	    android:layout_alignParentTop="true"
 	    android:layout_marginLeft="20dp"
 	    android:layout_marginRight="20dp"
-	    android:layout_marginTop="158dp" >
+	    android:layout_marginTop="100dp" >
 
 	    <RelativeLayout
 	        android:layout_width="fill_parent"
@@ -29,7 +29,7 @@
 	        <TextView
 	            style="@style/ImageTitle"
 	            android:layout_height="40dp"
-	            android:text="Vans  Shoes" />
+	            android:text="Vans Shoes" />
 
 	    </RelativeLayout>
 
@@ -71,10 +71,87 @@
 
 	    </RelativeLayout>
 
-	    <TextView
-	        style="@style/ImageTitle"
-	        android:text="Vans" />
+	</ViewFlipper>
 
+	<ViewFlipper
+	    android:id="@+id/ViewFlipper01"
+	    android:layout_width="fill_parent"
+	    android:layout_height="110dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="300dp" >
+
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:adjustViewBounds="true"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/valentines" />
+
+	        <TextView
+	            style="@style/ImageTitle"
+	            android:layout_height="40dp"
+	            android:text="Valentines Gift Ideas" />
+	    </RelativeLayout>
+
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:adjustViewBounds="true"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/chocolates" />
+
+	        <TextView
+	            style="@style/ImageTitle"
+	            android:layout_height="40dp"
+	            android:text="Chocolates" />
+	    </RelativeLayout>
+
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:adjustViewBounds="true"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/teddy" />
+
+	        <TextView
+	            style="@style/ImageTitle"
+	            android:layout_height="40dp"
+	            android:text="Teddy Bears" />
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+
+	        <ImageView
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:layout_gravity="center"
+	            android:adjustViewBounds="true"
+	            android:scaleType="centerCrop"
+	            android:src="@drawable/roses" />
+
+	        <TextView
+	            style="@style/ImageTitle"
+	            android:layout_height="40dp"
+	            android:text="Roses" />
+	    </RelativeLayout>
 	</ViewFlipper>
 
 </RelativeLayout>
