@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         getActionBar().hide();
         
         // Display the activity
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.splash);
     }
 
 

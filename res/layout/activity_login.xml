@@ -7,48 +7,48 @@
     android:background="#ffc50e0e">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="90dp">
+        android:orientation="vertical" >
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
             android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="195dp"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/logo" />
 
         <TextView
+            android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Log In"
-            android:id="@+id/loginText"
             android:layout_gravity="center_horizontal"
-            android:typeface="sans"
+            android:layout_marginBottom="25dp"
+            android:text="Log In"
+            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="35dp"
-            android:layout_marginBottom="30dp" />
+            android:textStyle="bold"
+            android:typeface="sans" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Email :"
+            android:text="Email"
             android:id="@+id/emailText"
             android:layout_gravity="center_horizontal" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:ems="10"
             android:id="@+id/emailField"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="example@email.com"
+            android:inputType="textEmailAddress" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -59,11 +59,22 @@
             android:layout_gravity="center_horizontal" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
             android:id="@+id/passwordField"
-            android:layout_gravity="center_horizontal" />
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Log In" />
+
     </LinearLayout>
 </RelativeLayout>

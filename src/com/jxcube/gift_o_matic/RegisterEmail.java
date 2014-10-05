@@ -29,7 +29,7 @@ public class RegisterEmail extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_register_email);
+		setContentView(R.layout.activity_signup);
 		if (instance == null)
 			instance = this;
 	}
